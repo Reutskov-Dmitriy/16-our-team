@@ -1,0 +1,26 @@
+@font-face {
+	font-family: "OpenSans-Bold";
+	src: url(../../assets/fonts/AnyConv.com__OpenSans-Bold.woff);
+}
+
+@font-face {
+	font-family: "Raleway-Medium";
+	src: url(../../assets/fonts/AnyConv.com__Raleway-Medium.woff);
+}
+
+@font-face {
+	font-family: "Raleway-Regular";
+	src: url(../../assets/fonts/AnyConv.com__Raleway-Regular.woff);
+}
+
+@font-face {
+	font-family: "Roboto-Black";
+	src: url(../../assets/fonts/AnyConv.com__Roboto-Black.woff);
+}
+
+:root {
+	var(--font-family-osb): "OpenSans-Bold", sans-serif;
+	var(--font-family-rm): "Raleway-Medium", sans-serif;
+	var(--font-family-rr): "Raleway-Regular", sans-serif;
+	var(--font-family-rob): "Roboto-Black", sans-serif;
+}

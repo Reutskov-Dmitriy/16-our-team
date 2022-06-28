@@ -1,3 +1,13 @@
+@import "reset.scss";
+@import "vars.scss";
+
+// VARIABLES
+
+$gray: #898F8F;
+$yellow:#FFCC00;
+$grayDark: #666666;
+$black3: #333333;
+
 .container {
 	width: 1440px;
 	height: 1000px;
@@ -13,8 +23,7 @@ a:hover{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	position: absolute;
-	font-family: 'Roboto';
-	font-style: normal;
+	
 	
 }
 .team {
@@ -33,6 +42,7 @@ a:hover{
 		}
 }
 .team-header {
+	position: relative;
 	width: 450px;
 	height: 157px;
 	max-width: 100%;
@@ -41,15 +51,14 @@ a:hover{
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	border-bottom: 1px solid #FFCC00;
+	border-bottom: 1px solid $yellow;
 
 		&__subtitle {
 			font-weight: 500;
 			font-size: 18px;
 			line-height: 24px;
-/* identical to box height, or 133% */
 			text-transform: uppercase;
-			color: #898F8F;
+			color: $gray;
 		}
 
 		&__title {
@@ -58,9 +67,9 @@ a:hover{
 			font-weight: 900;
 			font-size: 60px;
 			line-height: 66px;
-			
+			font-family: var(--font-family-rob);
 			text-transform: uppercase;
-			color: #FFCC00;
+			color: $yellow;
 		}
 
 		&__logo {
@@ -69,7 +78,7 @@ a:hover{
 			height: 20px;
 			position: absolute;
 			left: 50%;
-			top: 20.5%;
+			bottom: -12%;
 			transform: translate(-50%, -50%);
 		}
 }
@@ -101,7 +110,7 @@ a:hover{
 			padding: 12.5% 16.5% 12.5% 0;
 			width: 515px;
 			max-width: 100%;
-			border-right:1px solid #FFCC00;
+			border-right:1px solid $yellow;
 		}
 		&__avatar img{
 			max-width: 430px;
@@ -117,30 +126,31 @@ a:hover{
 			align-items: center;
 			text-align: center;
 			justify-content: space-between;
-			
+			position: relative;
 		}
 
 		&__name {
-			font-weight: 900;
+			font-family: var(--font-family-rob);
 			font-size: 36px;
 			line-height: 42px;
-			text-align: center;
 			text-transform: capitalize;
-			color: #666666;
+			color: $grayDark;
 
 			&:after{
 			content: '';
 			width: 100px;
-			border: 1px solid #FFCC00;
+			border: 1px solid $yellow;
 			position: absolute;
 			rotate: 45deg;
-			top: 43.72%;
-			right: 20%;
+			top: 16%;
+			right: 40%;
 		}
 		}
 
 		
 		&__role {
+			font-family: var(--font-family-rr);
+			color: $grayDark;
 			margin-top: 60px;
 			font-size: 24px;
 			line-height: 36px;
@@ -153,34 +163,33 @@ a:hover{
 
 		&__text {
 			margin-top: 50px;
-			font-family: 'Raleway';
-			font-style: normal;
-			font-weight: 500;
+			font-family: var(--font-family-rm);
 			font-size: 14px;
 			line-height: 24px;
-			color: #333333;
+			color: $black3;
 
 			&:after{
 				content: url(../../assets/image/icons/decore.svg);
-				position: relative;
-				top: 10%;
+				position: absolute;
+				bottom: 8%;
+				right: 45%;
 			}
 		}
 
 		&__btn {
+			font-family: var(--font-family-osb);
 			width: 118px;
 			height: 24px;
 			display: block;
 			padding: 5px;
 			margin-top: 50px;
-			font-weight: 700;
 			font-size: 14px;
 			line-height: 14px;
-			color: #666666;
-			border: 1px solid #FFCC00;
+			color: $grayDark;
+			border: 1px solid $yellow;
 			transition: 1s;
 			&:hover{
-				background-color: #FFCC00;
+				background-color: $yellow;
 			}
 		}
 }
