@@ -1,0 +1,209 @@
+.container {
+  width: 1440px;
+  height: 1000px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.page {
+  position: absolute;
+  font-family: 'Roboto';
+  font-style: normal;
+}
+
+.team {
+  width: 1170px;
+  height: 757px;
+  margin: 0 auto;
+}
+
+.team__column {
+  max-width: 100%;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.team-header {
+  width: 450px;
+  height: 157px;
+  max-width: 100%;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #FFCC00;
+}
+
+.team-header__subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  text-transform: uppercase;
+  color: #898F8F;
+}
+
+.team-header__title {
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #FFCC00;
+}
+
+.team-header__logo {
+  background-color: #ffffff;
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 20.5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cards-slider {
+  width: 1030px;
+  height: 560px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.card .wrap {
+  width: 515px;
+  height: 100%;
+  padding: 12.5% 0 12.5% 16.5%;
+}
+
+.card__avatar {
+  padding: 12.5% 16.5% 12.5% 0;
+  width: 515px;
+  max-width: 100%;
+  border-right: 1px solid #FFCC00;
+}
+
+.card__avatar img {
+  max-width: 430px;
+  max-height: 430px;
+}
+
+.card__content {
+  width: 430px;
+  height: 430px;
+  max-width: 100%;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__name {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #666666;
+}
+
+.card__name:after {
+  content: '';
+  width: 100px;
+  border: 1px solid #FFCC00;
+  position: absolute;
+  rotate: 45deg;
+  top: 43.72%;
+  right: 20%;
+}
+
+.card__role {
+  margin-top: 60px;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+}
+
+.card__social {
+  margin-top: 30px;
+}
+
+.card__text {
+  margin-top: 50px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.card__text:after {
+  content: url(../../assets/image/icons/decore.svg);
+  position: relative;
+  top: 10%;
+}
+
+.card__btn {
+  width: 118px;
+  height: 24px;
+  display: block;
+  padding: 5px;
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #666666;
+  border: 1px solid #FFCC00;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card__btn:hover {
+  background-color: #FFCC00;
+}
+/*# sourceMappingURL=style.css.map */
