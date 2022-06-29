@@ -97,7 +97,7 @@ a:hover{
 		}
 
 		&__column {
-			flex: 0 1 50%;
+			flex: 1 1 50%;
 		}
 
 		.wrap {
@@ -147,7 +147,6 @@ a:hover{
 		}
 		}
 
-		
 		&__role {
 			font-family: var(--font-family-rr);
 			color: $grayDark;
@@ -159,6 +158,21 @@ a:hover{
 
 		&__social {
 			margin-top: 30px;
+			
+		}
+		&__icon a{
+			transition: 1s;
+		}
+
+		&__icon:hover {
+			
+			circle{
+				fill: $yellow;
+				stroke: $grayDark;
+			}
+			path{
+				fill: $grayDark;
+			}
 		}
 
 		&__text {
@@ -194,3 +208,33 @@ a:hover{
 		}
 }
 
+.card {
+
+		&__row {
+		}
+
+		&__column {
+		}
+
+		&__avatar {
+		}
+
+		&__content {
+		}
+
+		&__name {
+		}
+
+		&__role {
+		}
+
+		&__social {
+		}
+
+		&__icon {
+		}
+}
+.wrap {
+}
+.center {
+}
