@@ -25,6 +25,7 @@ a:hover{
 	position: absolute;
 	
 	
+	
 }
 .team {
 	width: 1170px;
@@ -160,8 +161,11 @@ a:hover{
 			margin-top: 30px;
 			
 		}
-		&__icon a{
-			transition: 1s;
+		&__icon {
+			circle,
+			path{
+				transition: 1s;
+			}
 		}
 
 		&__icon:hover {
@@ -208,33 +212,3 @@ a:hover{
 		}
 }
 
-.card {
-
-		&__row {
-		}
-
-		&__column {
-		}
-
-		&__avatar {
-		}
-
-		&__content {
-		}
-
-		&__name {
-		}
-
-		&__role {
-		}
-
-		&__social {
-		}
-
-		&__icon {
-		}
-}
-.wrap {
-}
-.center {
-}

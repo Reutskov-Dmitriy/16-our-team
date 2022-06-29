@@ -288,7 +288,8 @@ a:hover {
   margin-top: 30px;
 }
 
-.card__icon a {
+.card__icon circle,
+.card__icon path {
   -webkit-transition: 1s;
   transition: 1s;
 }
