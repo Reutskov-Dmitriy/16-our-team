@@ -1,0 +1,214 @@
+@import "reset.scss";
+@import "vars.scss";
+
+// VARIABLES
+
+$gray: #898F8F;
+$yellow:#FFCC00;
+$grayDark: #666666;
+$black3: #333333;
+
+.container {
+	width: 1440px;
+	height: 1000px;
+	
+}
+a:hover{
+	cursor: pointer;
+}
+.page {
+	max-width: 100%;
+	max-height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	
+	
+	
+}
+.team {
+	width: 1170px;
+	height: 757px;
+	margin: 0 auto;
+	
+		&__column{
+			max-width: 100%;
+			max-height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 40px;
+			
+		}
+}
+.team-header {
+	position: relative;
+	width: 450px;
+	height: 157px;
+	max-width: 100%;
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border-bottom: 1px solid $yellow;
+
+		&__subtitle {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 24px;
+			text-transform: uppercase;
+			color: $gray;
+		}
+
+		&__title {
+			margin-top: 15px;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 60px;
+			line-height: 66px;
+			font-family: var(--font-family-rob);
+			text-transform: uppercase;
+			color: $yellow;
+		}
+
+		&__logo {
+			background-color: #ffffff;
+			width: 25px;
+			height: 20px;
+			position: absolute;
+			left: 50%;
+			bottom: -12%;
+			transform: translate(-50%, -50%);
+		}
+}
+
+
+.cards-slider {
+	width: 1030px;
+	height: 560px;
+	max-width: 100%;
+	max-height: 100%;	
+}
+.card {	
+
+		&__row {
+			display: flex;			
+		}
+
+		&__column {
+			flex: 1 1 50%;
+		}
+
+		.wrap {
+			width: 515px;;
+			height: 100%;
+			padding: 12.5% 0 12.5% 16.5%;
+		}
+		
+		&__avatar {
+			padding: 12.5% 16.5% 12.5% 0;
+			width: 515px;
+			max-width: 100%;
+			border-right:1px solid $yellow;
+		}
+		&__avatar img{
+			max-width: 430px;
+			max-height: 430px;
+		}
+		&__content {
+			width: 430px;
+			height: 430px;
+			max-width: 100%;
+			max-height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			justify-content: space-between;
+			position: relative;
+		}
+
+		&__name {
+			font-family: var(--font-family-rob);
+			font-size: 36px;
+			line-height: 42px;
+			text-transform: capitalize;
+			color: $grayDark;
+
+			&:after{
+			content: '';
+			width: 100px;
+			border: 1px solid $yellow;
+			position: absolute;
+			rotate: 45deg;
+			top: 16%;
+			right: 40%;
+		}
+		}
+
+		&__role {
+			font-family: var(--font-family-rr);
+			color: $grayDark;
+			margin-top: 60px;
+			font-size: 24px;
+			line-height: 36px;
+			text-transform: capitalize;
+		}
+
+		&__social {
+			margin-top: 30px;
+			
+		}
+		&__icon {
+			circle,
+			path{
+				transition: 1s;
+			}
+		}
+
+		&__icon:hover {
+			
+			circle{
+				fill: $yellow;
+				stroke: $grayDark;
+			}
+			path{
+				fill: $grayDark;
+			}
+		}
+
+		&__text {
+			margin-top: 50px;
+			font-family: var(--font-family-rm);
+			font-size: 14px;
+			line-height: 24px;
+			color: $black3;
+
+			&:after{
+				content: url(../../assets/image/icons/decore.svg);
+				position: absolute;
+				bottom: 8%;
+				right: 45%;
+			}
+		}
+
+		&__btn {
+			font-family: var(--font-family-osb);
+			width: 118px;
+			height: 24px;
+			display: block;
+			padding: 5px;
+			margin-top: 50px;
+			font-size: 14px;
+			line-height: 14px;
+			color: $grayDark;
+			border: 1px solid $yellow;
+			transition: 1s;
+			&:hover{
+				background-color: $yellow;
+			}
+		}
+}
+
